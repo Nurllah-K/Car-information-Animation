@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-color: goldenrod;
+}
+.gallery {
+  display: flex;
+  align-self: center;
+  justify-content: space-around;
+}
+
+nav {
+  width: 100%;
+  position: sticky;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.nav-links {
+  margin-right: 50px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 50px;
+}
+
+li a {
+  font-size: 17px;
+  letter-spacing: 2px;
+  color: black;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  transition: all 0.5s ease;
+}
+li a:hover {
+  border: 1px solid#50505a;
+  color: #50505a;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.logo {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.information {
+  width: 1000px;
+  height: 1000px;
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  transform: translateY(-50%);
+}
+
+#circle {
+  width: 800px;
+  height: 800px;
+  position: absolute;
+  top: 100px;
+  left: 0px;
+  border-radius: 50%;
+  transform: rotate(0deg);
+  transition: 1s;
+}
+.galery {
+  width: 300px;
+  height: 200px;
+  margin: 10px 0;
+  opacity: 0.7;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.7s ease;
+}
+.galery:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.car-images {
+  margin-top: 50px;
+  margin-left: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.feature img {
+  width: 150px;
+  color: #50505a;
+}
+.feature {
+  position: absolute;
+  text-align: center;
+  display: flex;
+  color: #50505a;
+}
+.feature div {
+  margin-left: 30px;
+}
+
+.feature div p {
+  margin-top: 8px;
+  color: #50505a;
+}
+
+.first {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  top: 750px;
+  right: 270px;
+  transform: rotate(90deg);
+}
+
+.second {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  top: -200px;
+  left: 300px;
+  transform: rotate(-90deg);
+}
+
+.third {
+  bottom: 370px;
+  left: -260px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  transform: rotate(180deg);
+}
+
+h1 {
+  font-size: 22px;
+  color: rgb(65, 64, 64);
+}
+
+.vehicle {
+  text-align: center;
+  width: 300px;
+  height: 125px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.gear {
+  text-align: center;
+  color: #50505a;
+  width: 300px;
+  height: 125px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.fuel {
+  text-align: center;
+  width: 300px;
+  height: 125px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.mzd-car {
+  width: 700px;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.controls {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50px);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.controls h3 {
+  margin: 15px 0;
+  color: #50505a;
+}
+
+#UpBtn {
+  width: 15px;
+  cursor: pointer;
+}
+#DownBtn {
+  cursor: pointer;
+  width: 15px;
+}
+.over-info {
+  width: 0;
+  height: 0;
+  border-top: 500px solid #50505a;
+  border-right: 500px solid transparent;
+  border-bottom: 500px solid #50505a;
+  border-left: 500px solid #50505a;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
